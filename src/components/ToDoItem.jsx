@@ -11,9 +11,24 @@ function ToDoItem (props) {
 
     }
 
-    return (<div onClick={handleClick}>
-        <li style={{textDecoration: isDone ? "line-through" : "none"}}>{props.text}</li>
-    </div>)
+    return (
+    <div className="list_content">
+        <div onClick={handleClick}>
+        <li style={{textDecoration: isDone ? "line-through" : "none"}}>{props.text}
+            
+        </li>
+        <div className="delete" onClick={ () => {
+                props.onChecked(props.id);
+            }}>
+                <p>❌</p>
+
+            </div>
+
+           
+        </div>
+       
+    </div>
+    )
 }
 
 export default ToDoItem;

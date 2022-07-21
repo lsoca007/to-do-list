@@ -25,6 +25,7 @@ body {
   box-shadow: 4px 3px 7px 2px #00000040;
   padding: 1rem;
   box-sizing: border-box;
+  
 }
 .heading {
   display: flex;
@@ -76,4 +77,21 @@ li {
   text-align: left;
   position: relative;
   padding: 0.5rem;
+  
+  
 }
+
+.delete {
+
+  float: right;
+  display: flex;
+
+
+
+}
+
+.list_content{
+  display: grid;
+
+}
+
