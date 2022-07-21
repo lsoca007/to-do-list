@@ -22,12 +22,7 @@ function ToDoItem (props) {
                 props.onChecked(props.id);
             }}>
                 <p>❌</p>
-
             </div>
-
-           
-        
-       
     </div>
     )
 }
