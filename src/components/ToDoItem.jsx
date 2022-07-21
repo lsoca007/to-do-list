@@ -12,11 +12,12 @@ function ToDoItem (props) {
     }
 
     return (
-    <div className="list_content">
-        <div onClick={handleClick}>
+    <div className="item">
+        <div className= "list_content" onClick={handleClick}>
         <li style={{textDecoration: isDone ? "line-through" : "none"}}>{props.text}
             
         </li>
+        </div>
         <div className="delete" onClick={ () => {
                 props.onChecked(props.id);
             }}>
@@ -25,7 +26,7 @@ function ToDoItem (props) {
             </div>
 
            
-        </div>
+        
        
     </div>
     )

@@ -1,5 +1,6 @@
 body {
-  background-color: #ffeaa7;
+  /*background-color: #ffeaa7;*/
+  background-color: #0078AA;
   min-height: 70vh;
   padding: 1rem;
   box-sizing: border-box;
@@ -37,7 +38,8 @@ body {
   transform: rotate(2deg);
   padding: 0.2rem 1.2rem;
   border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
-  background-color: #fdcb6e;
+  /*background-color: #fdcb6e;*/
+  background-color: #3AB4F2;
   font-size: 1.5rem;
 }
 
@@ -49,6 +51,7 @@ body {
   border-bottom-left-radius: 3px 15px;
   border: solid 3px transparent;
   border-bottom: dashed 3px #fdcb6e;
+  border-bottom: dashed 3px #3AB4F2;
   font-family: "Architects Daughter", cursive;
   font-size: 1rem;
   color: hsla(260, 2%, 25%, 0.7);
@@ -64,6 +67,7 @@ button {
   padding-bottom: 3px;
   border-radius: 5px;
   background-color: #ffeaa7;
+  background-color: #3AB4F2;
 }
 button span {
   background: #f1f5f8;
@@ -83,15 +87,21 @@ li {
 
 .delete {
 
-  float: right;
-  display: flex;
 
-
-
+  display:flex;
+  font-size: 0.6rem;
+  width: fit-content;
+  float:right;
+  
 }
 
 .list_content{
   display: grid;
+  width: auto;
 
+}
+
+.item {
+  display: flex;
 }
 
